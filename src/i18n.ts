@@ -1,0 +1,138 @@
+// SPDX-License-Identifier: Apache-2.0
+export type Language = 'en' | 'es'
+
+const en: Record<string, string> = {
+  langEn: 'EN',
+  langEs: 'ES',
+
+  footerCreatedBy: 'Created by',
+  footerRole: '— University Professor',
+  footerLiveCoded: 'Live-coded for students. All visualizations are interactive.',
+
+  heroTitle: 'Kernel & Neural Network Playground',
+  heroSubtitle: 'Interactive ML Concepts',
+  heroDesc: 'Explore K-Nearest Neighbors, Support Vector Machines, Perceptron, and Multilayer Perceptron with real-time interactive visualizations. Adjust parameters and watch the algorithms learn.',
+  heroTag1: 'K-Nearest Neighbors',
+  heroTag2: 'Support Vector Machine',
+  heroTag3: 'Perceptron',
+  heroTag4: 'MLP',
+
+  navKNN: 'K-Nearest Neighbors',
+  navSVM: 'Support Vector Machine',
+  navPerceptron: 'Perceptron',
+  navMLP: 'MLP',
+
+  knnTitle: 'K-Nearest Neighbors',
+  knnSubtitle: 'Instance-based learning — no training phase, just memorize the data',
+  knnHint: 'Move the k slider to see how the decision boundary changes. Watch accuracy rise and fall as you increase k.',
+  knnK: 'Neighbors (k)',
+  knnAccuracy: 'Accuracy',
+  knnDataset: 'Dataset',
+  knnBlobs: 'Blobs',
+  knnXOR: 'XOR',
+  knnNeighbors: 'nearest neighbors highlighted',
+
+  svmTitle: 'Support Vector Machine',
+  svmSubtitle: 'Maximize the margin between classes — find the widest street',
+  svmHint: 'Increase C for a harder margin (fewer support vectors, narrower margin). Decrease C for a softer margin (more tolerance for misclassification).',
+  svmC: 'Regularization (C)',
+  svmMargin: 'Margin width',
+  svmSupportVectors: 'Support vectors',
+  svmKernel: 'Kernel',
+  svmLinear: 'Linear',
+  svmRBF: 'RBF',
+
+  percTitle: 'Perceptron',
+  percSubtitle: 'The simplest neural unit — a biological neuron inspired linear classifier',
+  percHint: 'Watch how weights update epoch by epoch on the OR gate dataset. The perceptron converges when all points are correctly classified.',
+  percEpochs: 'Epoch',
+  percLR: 'Learning Rate',
+  percActivation: 'Activation',
+  percWeights: 'Weights',
+  percConvergence: 'Converged',
+
+  mlpTitle: 'Multilayer Perceptron',
+  mlpSubtitle: 'Stack layers of perceptrons — universal function approximator',
+  mlpHint: 'More hidden units = faster convergence but higher risk of overfitting. Watch validation loss diverge from training loss as complexity increases.',
+  mlpHiddenUnits: 'Hidden Units',
+  mlpEpochs: 'Epochs',
+  mlpActivation: 'Activation Function',
+  mlpTrainLoss: 'Train Loss',
+  mlpValLoss: 'Val Loss',
+  mlpArchitecture: 'Architecture',
+
+  refTitle: 'References & Further Reading',
+  refBook1: 'Bishop, C.M. — Pattern Recognition and Machine Learning (Springer, 2006)',
+  refBook2: 'Goodfellow, I., Bengio, Y., Courville, A. — Deep Learning (MIT Press, 2016)',
+  refLink1: 'scikit-learn: KNN, SVM, MLP documentation',
+  refLink2: 'Neural Networks and Deep Learning — Michael Nielsen (online book)',
+}
+
+const es: Record<string, string> = {
+  langEn: 'EN',
+  langEs: 'ES',
+
+  footerCreatedBy: 'Creado por',
+  footerRole: '— Profesor Universitario',
+  footerLiveCoded: 'Programado en vivo para estudiantes. Todas las visualizaciones son interactivas.',
+
+  heroTitle: 'Playground de Kernels y Redes Neuronales',
+  heroSubtitle: 'Conceptos de ML Interactivos',
+  heroDesc: 'Explora K-Nearest Neighbors, Máquinas de Soporte Vectorial, Perceptrón y Perceptrón Multicapa con visualizaciones interactivas en tiempo real. Ajusta los parámetros y observa cómo aprenden los algoritmos.',
+  heroTag1: 'K-Vecinos más Cercanos',
+  heroTag2: 'Máquina de Soporte Vectorial',
+  heroTag3: 'Perceptrón',
+  heroTag4: 'MLP',
+
+  navKNN: 'K-Vecinos',
+  navSVM: 'SVM',
+  navPerceptron: 'Perceptrón',
+  navMLP: 'MLP',
+
+  knnTitle: 'K-Vecinos más Cercanos',
+  knnSubtitle: 'Aprendizaje basado en instancias — sin fase de entrenamiento, solo memoriza los datos',
+  knnHint: 'Mueve el slider de k para ver cómo cambia la frontera de decisión. Observa cómo la precisión sube y baja al aumentar k.',
+  knnK: 'Vecinos (k)',
+  knnAccuracy: 'Precisión',
+  knnDataset: 'Dataset',
+  knnBlobs: 'Grupos',
+  knnXOR: 'XOR',
+  knnNeighbors: 'vecinos más cercanos resaltados',
+
+  svmTitle: 'Máquina de Soporte Vectorial',
+  svmSubtitle: 'Maximizar el margen entre clases — encontrar la calle más ancha',
+  svmHint: 'Aumenta C para un margen más duro (menos vectores de soporte, margen más estrecho). Disminuye C para un margen más suave (más tolerancia a clasificaciones incorrectas).',
+  svmC: 'Regularización (C)',
+  svmMargin: 'Ancho del margen',
+  svmSupportVectors: 'Vectores de soporte',
+  svmKernel: 'Kernel',
+  svmLinear: 'Lineal',
+  svmRBF: 'RBF',
+
+  percTitle: 'Perceptrón',
+  percSubtitle: 'La unidad neuronal más simple — clasificador lineal inspirado en neuronas biológicas',
+  percHint: 'Observa cómo se actualizan los pesos época por época con el dataset OR. El perceptrón converge cuando todos los puntos son clasificados correctamente.',
+  percEpochs: 'Época',
+  percLR: 'Tasa de Aprendizaje',
+  percActivation: 'Activación',
+  percWeights: 'Pesos',
+  percConvergence: 'Convergió',
+
+  mlpTitle: 'Perceptrón Multicapa',
+  mlpSubtitle: 'Apila capas de perceptrones — aproximador universal de funciones',
+  mlpHint: 'Más unidades ocultas = convergencia más rápida pero mayor riesgo de sobreajuste. Observa cómo la pérdida de validación diverge de la de entrenamiento.',
+  mlpHiddenUnits: 'Unidades Ocultas',
+  mlpEpochs: 'Épocas',
+  mlpActivation: 'Función de Activación',
+  mlpTrainLoss: 'Pérdida Entrenamiento',
+  mlpValLoss: 'Pérdida Validación',
+  mlpArchitecture: 'Arquitectura',
+
+  refTitle: 'Referencias y Lecturas Adicionales',
+  refBook1: 'Bishop, C.M. — Pattern Recognition and Machine Learning (Springer, 2006)',
+  refBook2: 'Goodfellow, I., Bengio, Y., Courville, A. — Deep Learning (MIT Press, 2016)',
+  refLink1: 'scikit-learn: documentación de KNN, SVM, MLP',
+  refLink2: 'Redes Neuronales y Deep Learning — Michael Nielsen (libro online)',
+}
+
+export const translations: Record<Language, Record<string, string>> = { en, es }
