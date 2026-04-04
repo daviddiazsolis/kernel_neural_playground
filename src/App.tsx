@@ -10,6 +10,7 @@ import SVM from './components/SVM'
 import Perceptron from './components/Perceptron'
 import MLP from './components/MLP'
 import References from './components/References'
+import NotebooksSection from './components/NotebooksSection'
 import Footer from './components/Footer'
 
 const SECTIONS = [
@@ -57,6 +58,7 @@ function AppInner() {
         <SVM />
         <Perceptron />
         <MLP />
+        <NotebooksSection />
         <References />
       </main>
       <Footer />

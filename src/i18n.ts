@@ -6,7 +6,7 @@ const en: Record<string, string> = {
   langEs: 'ES',
 
   footerCreatedBy: 'Created by',
-  footerRole: '— University Professor',
+  footerRole: 'Ph.D.',
   footerLiveCoded: 'Live-coded for students. All visualizations are interactive.',
 
   heroTitle: 'Kernel & Neural Network Playground',
@@ -66,6 +66,11 @@ const en: Record<string, string> = {
   refBook2: 'Goodfellow, I., Bengio, Y., Courville, A. — Deep Learning (MIT Press, 2016)',
   refLink1: 'scikit-learn: KNN, SVM, MLP documentation',
   refLink2: 'Neural Networks and Deep Learning — Michael Nielsen (online book)',
+
+  nbTitle: 'Notebooks & Colab',
+  nbSubtitle: 'Companion Jupyter notebooks for each topic. Open directly in Google Colab — no installation required.',
+  nbKernelTitle: 'KNN, SVM & Neural Networks',
+  nbKernelDesc: 'Implement K-Nearest Neighbors, Support Vector Machines, and Multi-Layer Perceptrons with sklearn. Includes decision boundary plots and hyperparameter search.',
 }
 
 const es: Record<string, string> = {
@@ -73,7 +78,7 @@ const es: Record<string, string> = {
   langEs: 'ES',
 
   footerCreatedBy: 'Creado por',
-  footerRole: '— Profesor Universitario',
+  footerRole: 'Ph.D.',
   footerLiveCoded: 'Programado en vivo para estudiantes. Todas las visualizaciones son interactivas.',
 
   heroTitle: 'Playground de Kernels y Redes Neuronales',
@@ -133,6 +138,11 @@ const es: Record<string, string> = {
   refBook2: 'Goodfellow, I., Bengio, Y., Courville, A. — Deep Learning (MIT Press, 2016)',
   refLink1: 'scikit-learn: documentación de KNN, SVM, MLP',
   refLink2: 'Redes Neuronales y Deep Learning — Michael Nielsen (libro online)',
+
+  nbTitle: 'Notebooks y Colab',
+  nbSubtitle: 'Notebooks de Jupyter como complemento para cada tema. Ábrelos directamente en Google Colab — sin instalación.',
+  nbKernelTitle: 'KNN, SVM y Redes Neuronales',
+  nbKernelDesc: 'Implementa K-Vecinos más Cercanos, Máquinas de Vectores de Soporte y Perceptrones Multicapa con sklearn. Incluye gráficos de fronteras de decisión y búsqueda de hiperparámetros.',
 }
 
 export const translations: Record<Language, Record<string, string>> = { en, es }
